@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMP125-Web Development-Sec406</title>
+    <script src="assignment1.js" defer></script>
+    <link rel="stylesheet" href="assignment1.css" />
+    <link rel="icon" type="image/x-icon" href="assets/pad.png" />
+  </head>
+  <body onload="createGrid(10)">
+    <div class="header">
+      <div></div>
+      <div class="middle">
+        <img src="assets/note-pad.png" alt="logo" class="logo" />
+        <h1>Assignment 1</h1>
+      </div>
+      <div></div>
+    </div>
+    <hr class="thick" />
+    <div id="container" class="container">
+      <div class="left-panel">
+        <fieldset>
+          <legend>Grid length</legend>
+          <div class="grid-length">
+            <div class="btn-grid-length">
+              <button type="button" id="btnGridLength">Enter</button>
+            </div>
+            <div class="input-range-slider">
+              <input
+                type="range"
+                min="1"
+                max="10"
+                value="0"
+                id="inputRangeSlider"
+              />
+            </div>
+            <div class="grid-length-value text-right-align">
+              <label id="lblGridLength">0</label>
+              <span class=""> x </span>
+              <label id="lblGridLengthRepeat">0</label>
+            </div>
+          </div>
+          <hr class="thin" />
+          <div class="create-grid-buttons">
+            <div>
+              <button id="btnCreateGrid" class="create-grid-button">
+                Create grid
+              </button>
+            </div>
+            <div>
+              <button id="btnClearGrid" class="clear-grid-button">
+                Clear grid
+              </button>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="right-panel">
+        <div id="gridContainer" class="grid-container"></div>
+      </div>
+    </div>
+    <div class="footer" style="padding: 20px; align-items: center">
+      <h5>Developed by Kazi Islam, 301163646</h5>
+      <h5>&copy; Kazi Islam, 2024</h5>
+    </div>
+  </body>
+</html>
